@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="title">
+        <h1>
+          File Metadata
+        </h1>
+      </header>
+      <div class="text">
+        <h3>API</h3>
+        <h3>/ api / upload</h3>
+        <p><b>POST</b> request returns a json object with name, mimetype and size.</p>
+        <h3>Example</h3>
+        <p>{"name":"robots.txt","type":"text/plain","size":"15"}</p>
+      </div>
+    
+      <div class="form">
+        <form onsubmit="onSubmit()" id="up-form" method="POST" action="/api/upload">
+          <input type="file" id="upfile" name="upfile">
+          <button type="submit" id="submit">
+            Submit
+          </button>
+        </form>    
+      </div>
+    
+    
+    </div>
+    <div class="fform">
+      <div class="select-file">
+        <button name="fbrowse" id="fbrowse">
+          Browse
+        </button><div class="file-info" id="file-name">Select a file</div>
+      </div>
+      <button id="fsubmit">
+        Upload!
+      </button>
+    </div>
+  </body>
+</html>

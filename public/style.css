@@ -1,0 +1,71 @@
+body {
+  background: #9c9;
+  color: #fff;
+}
+.main-container {
+  margin: 0 auto;
+  width: 60%;
+  min-width: 320px;
+}
+.title {
+  text-align: center;
+  font-family: Sans-serif;
+}
+.text {
+
+  margin: 0 auto;
+  text-align: center;
+  font-family: Sans-serif;
+}
+.form {
+  position: fixed;
+  opacity: 0;
+  top: -100px;
+}
+
+.fform {
+  margin: 50px auto;
+  width: 60%;
+  min-width: 300px;
+  padding: 50px 10px;
+  background: #fff;
+}
+.select-file {
+  text-align: center;
+  color: #000;
+}
+#fbrowse {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  max-height: 50px;
+  color: #fff;
+  padding: 10px;
+  background-color: #c99;
+  border: 0;
+  border-radius: 15px 0px 0px 15px;
+}
+.file-info {
+  margin: 0px;
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  display: inline-block;
+  max-height: 50px;
+  min-width: 150px;
+  background-color: #ddd;
+  border-radius: 0px 15px 15px 0px;
+}
+#fsubmit {
+  margin: 10px auto;
+  display: block;
+  color: #fff;
+  padding: 10px;
+  background-color: #c99;
+  border: 0;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
